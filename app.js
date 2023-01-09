@@ -1,7 +1,6 @@
 const express = require("express");
-//require('./db');
+const db=require('./db/index');
 const userRouter = require("./routes/user");
-var database=require('./db');
 const app = express();
 app.use(express.json());
 app.use("/api/user", userRouter);
